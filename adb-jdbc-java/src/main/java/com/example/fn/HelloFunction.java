@@ -33,7 +33,6 @@ public class HelloFunction {
     private final String dbUser = System.getenv().get("DB_USER");
     private final String dbPassword = System.getenv().get("DB_PASSWORD");
     private final String dbUrl = System.getenv().get("DB_URL");
-    private final String regionName = System.getenv().get("REGION_NAME");
     private final String sqlText = System.getenv().get("SQL_TEXT");
 
     final static String CONN_FACTORY_CLASS_NAME="oracle.jdbc.pool.OracleDataSource";

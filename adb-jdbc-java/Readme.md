@@ -41,6 +41,10 @@ https://blogs.oracle.com/developers/oracle-functions-connecting-to-an-atp-databa
     - func.yamlファイル
     - HelloFunction.javaファイル
     の編集（本ファイルに置き換え）
+        HelloFunction.java の「client.setRegion(Region.US_ASHBURN_1);」行を利用リージョンに変更
+        例）東京リージョンの場合
+            client.setRegion(Region.AP_TOKYO_1);
+
 - ファンクションのデプロイと呼び出し
     fn deploy --app oci-adb-jdbc-java-app
     fn invoke oci-adb-jdbc-java-app oci-adb-jdbc-java
